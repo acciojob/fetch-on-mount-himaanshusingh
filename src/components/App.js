@@ -14,9 +14,9 @@ const App = () => {
   return (
     <div>
       {users &&
-        users.map((user) => (
+        users.map((user, index) => (
           <div key={user.id}>
-            <h2>{user.title}</h2>
+            <h2>{`${index + 1}. ${user.title}`}</h2>
             <p>{user.body}</p>
           </div>
         ))}
