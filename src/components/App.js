@@ -16,7 +16,7 @@ const App = () => {
       {users &&
         users.map((user) => (
           <div key={user.id}>
-            <h1>{user.title}</h1>
+            <h2>{user.title}</h2>
             <p>{user.body}</p>
           </div>
         ))}
