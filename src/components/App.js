@@ -1,10 +1,10 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import "./../styles/App.css";
 
 const App = () => {
-  const [users, setUsers] = React.useState(null);
+  const [users, setUsers] = useState(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then((res) => res.json())
       .then((data) => setUsers(data))
